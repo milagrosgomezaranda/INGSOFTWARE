@@ -13,8 +13,15 @@ namespace ControlDeCalidad.AccesoADatos
         public List<Usuario> Usuarios = new List<Usuario>();
         public RepositorioUsuario()
         {
-            Usuarios.Add(new SupLinea(45563,28963258,"Ivana","Corbalan","IvanaC","123456"));
-            Usuarios.Add(new SupCalidad(45564,25778963,"Milagros","Gomez","MilagrosL","123456"));
+            Usuarios.Add(new SupLinea(45563,28963258,"Ivana","Corbalan","IvanaSL","123"));
+            Usuarios.Add(new SupCalidad(45563, 28963258, "Ivana", "Corbalan", "IvanaSC", "123"));
+
+            Usuarios.Add(new SupLinea(45564,25778963,"Milagros","Gomez Aranda","MilagrosSL","123"));
+            Usuarios.Add(new SupCalidad(45564,25778963,"Milagros","Gomez Aranda","MilagrosSC","123"));
+
+            Usuarios.Add(new SupCalidad(123456,11111,"Mariela","Ferrer","MarielaSC","123"));
+            Usuarios.Add(new SupLinea(45564, 25778963, "Mariela", "Ferrer", "MarielaSL", "123"));
+
             Usuarios.Add(new SupCalidad(45565,27896321,"Solana","Campos","SolC","123456"));
         }
 
