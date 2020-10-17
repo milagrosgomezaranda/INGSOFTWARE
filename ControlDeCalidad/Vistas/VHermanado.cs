@@ -108,5 +108,10 @@ namespace ControlDeCalidad.Presentacion.Vistas
             cbPieDerecho.DataSource = pieDerecho;
             cbPieIzquierdo.DataSource = pieIzquierdo;
         }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
