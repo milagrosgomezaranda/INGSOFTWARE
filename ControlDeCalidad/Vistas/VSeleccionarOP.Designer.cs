@@ -33,11 +33,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvOrdenProduccion = new System.Windows.Forms.DataGridView();
-            this.Asignado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bsOrdenProduccion = new System.Windows.Forms.BindingSource(this.components);
             this.numeroOperacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoOPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lineaTrabajoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsOrdenProduccion = new System.Windows.Forms.BindingSource(this.components);
+            this.Asignado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenProduccion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsOrdenProduccion)).BeginInit();
@@ -61,11 +61,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lato", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(264, 9);
+            this.label1.Location = new System.Drawing.Point(250, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 35);
+            this.label1.Size = new System.Drawing.Size(309, 38);
             this.label1.TabIndex = 4;
             this.label1.Text = "Orden de Producción";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -88,7 +88,7 @@
             this.dgvOrdenProduccion.DataSource = this.bsOrdenProduccion;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -100,39 +100,40 @@
             this.dgvOrdenProduccion.Size = new System.Drawing.Size(776, 371);
             this.dgvOrdenProduccion.TabIndex = 3;
             this.dgvOrdenProduccion.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrdenProduccion_CellClick);
+            this.dgvOrdenProduccion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvOrdenProduccion_CellContentClick);
             this.dgvOrdenProduccion.SelectionChanged += new System.EventHandler(this.dgvOrdenProduccion_SelectionChanged);
             // 
-            // Asignado
+            // bsOrdenProduccion
             // 
-            this.Asignado.DataPropertyName = "Asignado";
-            this.Asignado.HeaderText = "¿SUPERVISOR DE CALIDAD ASIGNADO?";
-            this.Asignado.Name = "Asignado";
-            this.Asignado.ReadOnly = true;
+            this.bsOrdenProduccion.DataSource = typeof(ControlDeCalidad.Dominio.Entidades.OrdenProduccion);
             // 
             // numeroOperacionDataGridViewTextBoxColumn
             // 
             this.numeroOperacionDataGridViewTextBoxColumn.DataPropertyName = "NumeroOperacion";
-            this.numeroOperacionDataGridViewTextBoxColumn.HeaderText = "Nro. OP";
+            this.numeroOperacionDataGridViewTextBoxColumn.HeaderText = "Número de OP";
             this.numeroOperacionDataGridViewTextBoxColumn.Name = "numeroOperacionDataGridViewTextBoxColumn";
             this.numeroOperacionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // estadoOPDataGridViewTextBoxColumn
             // 
             this.estadoOPDataGridViewTextBoxColumn.DataPropertyName = "EstadoOP";
-            this.estadoOPDataGridViewTextBoxColumn.HeaderText = "ESTADO ACTUAL";
+            this.estadoOPDataGridViewTextBoxColumn.HeaderText = "Estado Actual";
             this.estadoOPDataGridViewTextBoxColumn.Name = "estadoOPDataGridViewTextBoxColumn";
             this.estadoOPDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // lineaTrabajoDataGridViewTextBoxColumn
             // 
             this.lineaTrabajoDataGridViewTextBoxColumn.DataPropertyName = "LineaTrabajo";
-            this.lineaTrabajoDataGridViewTextBoxColumn.HeaderText = "Línea";
+            this.lineaTrabajoDataGridViewTextBoxColumn.HeaderText = "Línea de Trabajo";
             this.lineaTrabajoDataGridViewTextBoxColumn.Name = "lineaTrabajoDataGridViewTextBoxColumn";
             this.lineaTrabajoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // bsOrdenProduccion
+            // Asignado
             // 
-            this.bsOrdenProduccion.DataSource = typeof(ControlDeCalidad.Dominio.Entidades.OrdenProduccion);
+            this.Asignado.DataPropertyName = "Asignado";
+            this.Asignado.HeaderText = "Supervisor de Calidad Asignado";
+            this.Asignado.Name = "Asignado";
+            this.Asignado.ReadOnly = true;
             // 
             // VSeleccionarOP
             // 
@@ -141,7 +142,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "VSeleccionarOP";
-            this.Text = "VSeleccionarOP";
+            this.Text = "Seleccionar Orden de Producción";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenProduccion)).EndInit();

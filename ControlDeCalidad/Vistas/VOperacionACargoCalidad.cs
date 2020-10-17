@@ -67,5 +67,10 @@ namespace ControlDeCalidad.Presentacion.Vistas
                 true ? MessageBoxIcon.Error : MessageBoxIcon.Information);
             }
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

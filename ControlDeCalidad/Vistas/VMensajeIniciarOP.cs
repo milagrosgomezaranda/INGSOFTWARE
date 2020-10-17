@@ -35,5 +35,25 @@ namespace ControlDeCalidad.Presentacion.Vistas
             OnAceptarClicked(sender,e);
             Close();
         }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtLineaTrabajo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNumero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

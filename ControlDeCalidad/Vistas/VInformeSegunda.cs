@@ -47,5 +47,20 @@ namespace ControlDeCalidad.Presentacion.Vistas
             }
             txtTotal.Text = ordenProduccion.InformeSegunda.TotalPares.ToString();
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VInformeSegunda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

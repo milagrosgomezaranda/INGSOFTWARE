@@ -80,5 +80,10 @@ namespace ControlDeCalidad.Presentacion.Vistas
 
             }
         }
+
+        private void VOperacionACargoLinea_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

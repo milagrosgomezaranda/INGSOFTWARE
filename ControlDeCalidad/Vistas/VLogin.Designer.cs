@@ -37,36 +37,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lato", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(67, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 35);
+            this.label1.Size = new System.Drawing.Size(205, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Iniciar Sesion";
+            this.label1.Text = "Iniciar Sesión";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tbUsuario
             // 
-            this.tbUsuario.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsuario.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbUsuario.Location = new System.Drawing.Point(16, 161);
             this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(297, 30);
+            this.tbUsuario.Size = new System.Drawing.Size(297, 29);
             this.tbUsuario.TabIndex = 1;
-            this.tbUsuario.Text = "USUARIO";
+            this.tbUsuario.Text = "Ingrese su usuario";
             this.tbUsuario.Click += new System.EventHandler(this.tbUsuario_Click);
             this.tbUsuario.Leave += new System.EventHandler(this.tbUsuario_Leave);
             // 
             // tbContraseña
             // 
-            this.tbContraseña.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContraseña.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbContraseña.Location = new System.Drawing.Point(16, 223);
             this.tbContraseña.MaxLength = 8;
             this.tbContraseña.Name = "tbContraseña";
-            this.tbContraseña.PasswordChar = '*';
-            this.tbContraseña.Size = new System.Drawing.Size(297, 30);
+            this.tbContraseña.Size = new System.Drawing.Size(297, 29);
             this.tbContraseña.TabIndex = 2;
-            this.tbContraseña.Text = "CONTRASEÑA";
+            this.tbContraseña.Text = "Ingrese su contraseña";
             this.tbContraseña.Click += new System.EventHandler(this.tbContraseña_Click);
             this.tbContraseña.Leave += new System.EventHandler(this.tbContraseña_Leave);
             // 
@@ -79,7 +80,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(297, 45);
             this.btnIngresar.TabIndex = 5;
-            this.btnIngresar.Text = "INGRESAR";
+            this.btnIngresar.Text = "Log in";
             this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 

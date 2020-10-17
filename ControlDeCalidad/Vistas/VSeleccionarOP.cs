@@ -59,5 +59,10 @@ namespace ControlDeCalidad.Presentacion.Vistas
                 vista.ShowDialog();
             }
         }
+
+        private void DgvOrdenProduccion_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
