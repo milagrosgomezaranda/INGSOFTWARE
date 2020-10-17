@@ -49,7 +49,6 @@
             // tbUsuario
             // 
             this.tbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsuario.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbUsuario.Location = new System.Drawing.Point(16, 161);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(297, 29);
@@ -61,13 +60,13 @@
             // tbContraseña
             // 
             this.tbContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbContraseña.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbContraseña.Location = new System.Drawing.Point(16, 223);
             this.tbContraseña.MaxLength = 8;
             this.tbContraseña.Name = "tbContraseña";
+            this.tbContraseña.PasswordChar = '*';
             this.tbContraseña.Size = new System.Drawing.Size(297, 29);
             this.tbContraseña.TabIndex = 2;
-            this.tbContraseña.Text = "Ingrese su contraseña";
+            this.tbContraseña.Text = "CONTRASEÑA";
             this.tbContraseña.Click += new System.EventHandler(this.tbContraseña_Click);
             this.tbContraseña.Leave += new System.EventHandler(this.tbContraseña_Leave);
             // 
