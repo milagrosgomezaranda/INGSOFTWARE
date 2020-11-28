@@ -19,6 +19,7 @@ namespace ControlDeCalidad.AccesoADatos
             Defectos.Add(new Defectos("Punta estrecha"));
             Defectos.Add(new Defectos("Punta afilada"));
         }
+
         public Defectos Agregar(Defectos item)
         {
             Defectos.Add(item);

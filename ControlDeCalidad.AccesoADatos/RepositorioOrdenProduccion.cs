@@ -12,6 +12,7 @@ namespace ControlDeCalidad.AccesoADatos
     {
         private readonly static RepositorioOrdenProduccion _instance = new RepositorioOrdenProduccion();
         public List<OrdenProduccion> OrdenProducciones = new List<OrdenProduccion>();
+
         private RepositorioOrdenProduccion()
         {
             RepositorioColor colores = new RepositorioColor();
@@ -29,6 +30,7 @@ namespace ControlDeCalidad.AccesoADatos
                 OrdenProducciones.Add(orden);
             }
         }
+
         public static RepositorioOrdenProduccion Instance
         {
             get

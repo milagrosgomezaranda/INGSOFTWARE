@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDeCalidad.Dominio", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDeCalidad.AccesoADatos", "ControlDeCalidad.AccesoADatos\ControlDeCalidad.AccesoADatos.csproj", "{6543D7F2-C57A-43EE-96AB-72001CFD4D00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B546FE07-C921-49F0-9A1D-F0FA0A7B20B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6543D7F2-C57A-43EE-96AB-72001CFD4D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6543D7F2-C57A-43EE-96AB-72001CFD4D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6543D7F2-C57A-43EE-96AB-72001CFD4D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B546FE07-C921-49F0-9A1D-F0FA0A7B20B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B546FE07-C921-49F0-9A1D-F0FA0A7B20B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B546FE07-C921-49F0-9A1D-F0FA0A7B20B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B546FE07-C921-49F0-9A1D-F0FA0A7B20B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
