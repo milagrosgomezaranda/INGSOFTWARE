@@ -55,6 +55,15 @@ namespace Test
             Assert.IsTrue(repouser.Login("IvanaC", "123"));
             Console.WriteLine("Se logro loguear el usuario.");
         }
+
+        [TestMethod]
+        public void AgregarLineaDeTrabajo()
+        {
+            SupLinea sl = new SupLinea(45564, 25778963, "Mariela", "Ferrer", "MarielaSL", "123");
+            OrdenProduccion op4 = new OrdenProduccion();
+
+            op4.AgregarLinea(sl);
+        }
     }
 }
 
